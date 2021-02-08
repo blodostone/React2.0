@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Router, Switch, Link} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Link} from 'react-router-dom'
 import User from './User'
 
 const App = () => {
@@ -10,10 +10,10 @@ const App = () => {
                     <h1>Users</h1>
                     <ul class="navigation">
                         <li class="navigation__item">
-                            <Link href="/users/github">Github</Link>
+                            <Link to="/users/github">Github</Link>
                         </li>
                         <li class="navigation__item">
-                            <Link href="/users/facebook">Facebook</Link>
+                            <Link to="/users/facebook">Facebook</Link>
                         </li>
                     </ul>
                     <Switch>
